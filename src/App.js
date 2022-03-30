@@ -1,23 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
+// import logo from './logo.svg';
+import { useEffect, useState } from "react";
+import "./App.css";
+// import Time from "./components/Time/Time";
+// import Input from "./core/Input/Input";
+import components from "./components/index";
+import core from "./core/index";
+import { NavBar } from "./core/NavBar";
 
 function App() {
+  const [value, setValue] = useState([]);
+  const data = [];
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>teste </h1>
+      {/* <Time setValue={setValue} /> */}
+      {/* <Input />       */}
+      <NavBar />
     </div>
   );
 }
